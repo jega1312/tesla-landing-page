@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Electric Cars, Solar & Clean Energy | Tesla</title>
+
+    <!-- Favicon Image -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Montserrat Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS Animate CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- JavaScript Link -->
+    <script src="script.js" defer></script>
+
+    <body>
+      <header
+        class="flex justify-between items-center fixed w-full h-20 p-6 bg-transparent md:px-10 lg:px-10 lg:fixed z-50"
+      >
+        <!-- Logo -->
+        <img
+          src="images/tesla.svg"
+          alt="Tesla Logo Image"
+          class="max-h-3 md:max-h-3.5 lg:max-h-4"
+        />
+
+        <!-- Hamburger Icon (mobile only) -->
+        <div
+          class="hamburger flex flex-col gap-y-2 cursor-pointer lg:hidden z-50"
+        >
+          <span
+            class="bg-[#181b21] h-1 w-9 md:w-10 rounded-4xl bar transition-all duration-300"
+          ></span>
+          <span
+            class="bg-[#181b21] h-1 w-9 md:w-10 rounded-4xl bar transition-all duration-300"
+          ></span>
+          <span
+            class="bg-[#181b21] h-1 w-9 md:w-10 rounded-4xl bar transition-all duration-300"
+          ></span>
+        </div>
+
+        <div
+          class="nav-list hidden absolute top-20 left-0 p-4 md:p-8 w-full bg-gradient-to-r from-slate-300 to-transparent z-50"
+        >
+          <!-- Nav Links -->
+          <nav class="links flex flex-col gap-2 lg:flex-row">
+            <a
+              href="#modelS"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Model S</a
+            >
+            <a
+              href="#model3"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Model 3</a
+            >
+            <a
+              href="#modelX"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Model X</a
+            >
+            <a
+              href="#modelY"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Model Y</a
+            >
+            <a
+              href="#solarRoof"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Solar Roof</a
+            >
+            <a
+              href="#solarPanels"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+              >Solar Panels</a
+            >
+          </nav>
+
+          <!-- External Links -->
+          <div class="links mt-8 flex flex-col gap-2 lg:flex-row lg:mt-0">
+            <a
+              href="#shop"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+              >Shop</a
+            >
+            <a
+              href="#account"
+              class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+              >Account</a
+            >
+            <a
+              href="#menu"
+              class="hidden w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+              >Menu</a
+            >
+          </div>
+        </div>
+
+        <!-- Nav Links for Desktop -->
+        <nav class="gap-2 lg:flex lg:flex-row hidden">
+          <a
+            href="#modelS"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Model S</a
+          >
+          <a
+            href="#model3"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Model 3</a
+          >
+          <a
+            href="#modelX"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Model X</a
+          >
+          <a
+            href="#modelY"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Model Y</a
+          >
+          <a
+            href="#solarRoof"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Solar Roof</a
+          >
+          <a
+            href="#solarPanels"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 text-nowrap lg:text-base"
+            >Solar Panels</a
+          >
+        </nav>
+
+        <!-- External Links -->
+        <div class="mt-8 lg:flex lg:flex-row lg:mt-0 hidden">
+          <a
+            href="#shop"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+            >Shop</a
+          >
+          <a
+            href="#account"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+            >Account</a
+          >
+          <a
+            href="#menu"
+            class="inline-block w-fit text-[#181b21] text-lg px-3 py-1.5 font-semibold rounded-2xl hover:bg-[#181b21]/10 lg:text-base"
+            >Menu</a
+          >
+        </div>
+      </header>
+
+      <!-- Model S Section Starts -->
+      <section id="modelS" class="h-screen w-full relative">
+        <img
+          src="images/ModelS.jfif"
+          alt="Model S Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Model S</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm text-[#393c41] w-56 bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+
+        <a href="#model3">
+          <svg
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            class="block w-full h-14 md:h-16 mx-auto absolute top-[89%] animate-bounce fade-in opacity-0 transition-all duration-2000 ease-out"
+          >
+            <path
+              stroke="var(--tds-icon--fill, #171a20)"
+              stroke-width="1.5"
+              d="m19.5 12.5-4.5 4-4.5-4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <!-- Model S Section Ends -->
+
+      <!-- Model 3 Section Starts -->
+      <section id="model3" class="h-screen w-full relative">
+        <img
+          src="images/Model3.jfif"
+          alt="Model 3 Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Model 3</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm w-56 text-[#393c41] bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+
+        <a href="#modelX">
+          <svg
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            class="block w-full h-14 md:h-16 mx-auto absolute top-[89%] animate-bounce fade-in opacity-0 transition-all duration-2000 ease-out"
+          >
+            <path
+              stroke="var(--tds-icon--fill, #171a20)"
+              stroke-width="1.5"
+              d="m19.5 12.5-4.5 4-4.5-4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <!-- Model 3 Section Ends -->
+
+      <!-- Model X Section Starts -->
+      <section id="modelX" class="h-screen w-full relative">
+        <img
+          src="images/ModelX.jfif"
+          alt="Model X Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Model X</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm text-[#393c41] w-56 bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+
+        <a href="#modelY">
+          <svg
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            class="block w-full h-14 md:h-16 mx-auto absolute top-[89%] animate-bounce fade-in opacity-0 transition-all duration-2000 ease-out"
+          >
+            <path
+              stroke="var(--tds-icon--fill, #171a20)"
+              stroke-width="1.5"
+              d="m19.5 12.5-4.5 4-4.5-4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <!-- Model X Section Ends -->
+
+      <!-- Model Y Section Starts -->
+      <section id="modelY" class="h-screen w-full relative">
+        <img
+          src="images/ModelY.jfif"
+          alt="Model Y Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Model Y</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm text-[#393c41] w-56 bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+
+        <a href="#solarRoof">
+          <svg
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            class="block w-full h-14 md:h-16 mx-auto absolute top-[89%] animate-bounce fade-in opacity-0 transition-all duration-2000 ease-out"
+          >
+            <path
+              stroke="var(--tds-icon--fill, #171a20)"
+              stroke-width="1.5"
+              d="m19.5 12.5-4.5 4-4.5-4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <!-- Model Y Section Ends -->
+
+      <!-- Solar Roof Section Starts -->
+      <section id="solarRoof" class="h-screen w-full relative">
+        <img
+          src="images/SolarRoof.jfif"
+          alt="Solar Roof Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Solar Roof</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm text-[#393c41] w-56 bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+
+        <a href="#solarPanels">
+          <svg
+            viewBox="0 0 30 30"
+            xmlns="http://www.w3.org/2000/svg"
+            class="block w-full h-14 md:h-16 mx-auto absolute top-[89%] animate-bounce fade-in opacity-0 transition-all duration-2000 ease-out"
+          >
+            <path
+              stroke="var(--tds-icon--fill, #171a20)"
+              stroke-width="1.5"
+              d="m19.5 12.5-4.5 4-4.5-4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </section>
+      <!-- Solar Roof Section Ends -->
+
+      <!-- Solar Panels Section Starts -->
+      <section id="solarPanels" class="h-screen w-full relative">
+        <img
+          src="images/SolarPanels.jfif"
+          alt="Solar Panels Image"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute w-full mx-auto top-[20%] text-center z-10 lg:top-[17%] fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <h1 class="text-4xl text-[#393c41] font-semibold">Solar Panels</h1>
+          <h2 class="text-sm text-[#4c4d51]">
+            Order Online for
+            <span class="underline cursor-pointer hover:text-black"
+              >Touchless Delivery</span
+            >
+          </h2>
+        </div>
+
+        <div
+          class="absolute w-full top-[74%] md:top-[73%] lg:top-[80%] flex flex-col md:flex-row items-center justify-center gap-2 fade-in opacity-0 transition-all duration-2000 ease-out"
+        >
+          <button
+            class="text-sm text-white w-56 bg-[#171a20]/80 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-[#171a20]/100 cursor-pointer"
+          >
+            Custom Order
+          </button>
+          <button
+            class="text-sm text-[#393c41] w-56 bg-white/60 font-medium uppercase px-8 py-2 rounded-4xl md:text-sm h-fit hover:bg-white/80 cursor-pointer"
+          >
+            Existing Inventory
+          </button>
+        </div>
+      </section>
+      <!-- Solar Panels Section Ends -->
+    </body>
+  </head>
+</html>
